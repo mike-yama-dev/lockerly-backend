@@ -6,8 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 use Laravel\Scout\Searchable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
-class Rarity extends Model
+class Category extends Model
 {
     use HasFactory, Searchable;
-    protected $table = 'rarities';
-    protected $guarded = [];}
+    protected $table = 'categories';
+    protected $guarded = [];
+}
