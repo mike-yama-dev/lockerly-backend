@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('cards', function (Blueprint $table) {
             $table->id();
             $table->foreignId('category_id')->constrained()->cascadeOnDelete();
-            $table->foreignId('rarity_id')->constrained()->cascadeOnDelete();
+            $table->foreignId('rarities_id')->constrained()->cascadeOnDelete();
             $table->foreignId('set_id')->constrained()->cascadeOnDelete();
             $table->string('name');
             $table->string('stage')->nullable();
